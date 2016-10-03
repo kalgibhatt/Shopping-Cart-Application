@@ -22,112 +22,46 @@
 	 <div class="row">
 		<div class="col-md-12">
 			<div class="row">
+				<div ng-if="errorMessage">
+					<span class="alert alert-warning">{{errorMessage}}</span>
+				</div>
 				<div class="col-md-6 select border-right">
-					<strong>Add items to cart</strong>
+					<strong style="text-decoration: underline;">Add items to cart</strong>
 					<div class="col-md-12 list" style="text-align: left">
-					<div ng-model="name"><p>MacBook Air 13.3-Inch Laptop</p></div>
-						<div><img class="image" ng-model="image" src="http://www.interestingreality.com/wp-content/uploads/2016/01/apple-laptop-battery-replacement.gif"></div>
-						<div class="font" ng-model="price">$887.99</div>
-						<div class="deliveryfont">Get it by Monday, Oct 10</div>
-						<div class="quantityfont" ng-model="quantity"><p>Quantity</div>
-					  	<div class="input-group spinner" style="margin-bottom:20px;">
-    					<input type="text" class="form-control" value="0">
-   					 	<div class="input-group-btn-vertical">
-      						<button class="btn btn-default" type="button"><i class="fa fa-caret-up"></i></button>
-      						<button class="btn btn-default" type="button"><i class="fa fa-caret-down"></i></button>
-    					</div>
-  						</div>
-					
-					<div ng-model="name"><p>Wireless Bluetooth Headphones</div>
-						<div><img class="image" ng-model="image" src="http://cdn2.greatfon.com/uploads/picture/751/69751/naushniki-kraski-fon.jpg"></div>
-						<div class="font" ng-model="price">$15.29</div>
-						<div class="deliveryfont">Get it by Tuesday, Oct 11</div>
-						<div class="quantityfont" ng-model="quantity"><p>Quantity</div>
-					  	<div class="input-group spinner" style="margin-bottom:20px;">
-    					<input type="text" class="form-control" value="0">
-   					 	<div class="input-group-btn-vertical">
-      						<button class="btn btn-default" type="button"><i class="fa fa-caret-up"></i></button>
-      						<button class="btn btn-default" type="button"><i class="fa fa-caret-down"></i></button>
-    					</div>
-  						</div>
-					
-					<div ng-model="name"><p>Makeup Brush Set</div>
-						<div><img class="image" ng-model="image" src="https://s-media-cache-ak0.pinimg.com/736x/f9/37/0c/f9370cfd63c877a42e7d794224e847bb.jpg"></div>
-						<div class="font" ng-model="price">$11.04</div>
-						<div class="deliveryfont">Get it by Wednesday, Oct 12</div>
-						<div class="quantityfont" ng-model="quantity"><p>Quantity</div>
-					  	<div class="input-group spinner" style="margin-bottom:20px;">
-    					<input type="text" class="form-control" value="0">
-   					 	<div class="input-group-btn-vertical">
-      						<button class="btn btn-default" type="button"><i class="fa fa-caret-up"></i></button>
-      						<button class="btn btn-default" type="button"><i class="fa fa-caret-down"></i></button>
-    					</div>
-  						</div>
-					
-					<div ng-model="name"><p>Food Storage Container</div>
-						<div><img class="image" ng-model="image" src="http://www.tuvie.com/wp-content/uploads/papilla-food-container-by-burcin-ceren-olcum1.jpg"></div>
-						<div class="font" ng-model="price">$5.99</div>
-						<div class="deliveryfont">Get it by Monday, Oct 10</div>
-						<div class="quantityfont" ng-model="quantity"><p>Quantity</div>
-					  	<div class="input-group spinner" style="margin-bottom:20px;">
-    					<input type="text" class="form-control" value="0">
-   					 	<div class="input-group-btn-vertical">
-      						<button class="btn btn-default" type="button"><i class="fa fa-caret-up"></i></button>
-      						<button class="btn btn-default" type="button"><i class="fa fa-caret-down"></i></button>
-    					</div>
-  						</div>
-					
-					<div ng-model="name"><p>Tide Detergent</div>
-						<div><img class="image" ng-model="image" src="http://www.hodhodnews.ir/upload/20160704/70653839581.jpg"></div>
-						<div class="font" ng-model="price">$10.67</div>
-						<div class="deliveryfont">Get it by Thursday, Oct 6</div>
-						<div class="quantityfont" ng-model="quantity"><p>Quantity</div>
-					  	<div class="input-group spinner" style="margin-bottom:20px;">
-    					<input type="text" class="form-control" value="0">
-   					 	<div class="input-group-btn-vertical">
-      						<button class="btn btn-default" type="button"><i class="fa fa-caret-up"></i></button>
-      						<button class="btn btn-default" type="button"><i class="fa fa-caret-down"></i></button>
-    					</div>
-  						</div>
-					
-					<div ng-model="name"><p>Lemon Squeezer</div>
-						<div><img class="image" ng-model="image" src="http://mco-d2-p.mlstatic.com/exprimidor-de-limon-chef-prioridad-y-exprimidor-de-limon-700321-MCO20738767706_052016-O.jpg"></div>
-						<div class="font" ng-model="price">$8.99</div>
-						<div class="deliveryfont">Get it by Tuesday, Oct 11</div>
-						<div class="quantityfont" ng-model="quantity"><p>Quantity</div>
-					  	<div class="input-group spinner" style="margin-bottom:20px;">
-    					<input type="text" class="form-control" value="0">
-   					 	<div class="input-group-btn-vertical">
-      						<button class="btn btn-default" type="button"><i class="fa fa-caret-up"></i></button>
-      						<button class="btn btn-default" type="button"><i class="fa fa-caret-down"></i></button>
-    					</div>
-  						</div>
-					
-					<div ng-model="name"><p>Compression Knee Sleeves</div>
-						<div><img class="image" ng-model="image" src="http://img.bluekangaroo.com/images/offer/06/39/normal-bc9a55edaffeab9fc0b9510aa29db97c-33903906.jpg"></div>
-						<div class="font" ng-model="price">$28.79</div>
-						<div class="deliveryfont">Get it by Friday, Oct 7</div>
-						<div class="quantityfont" ng-model="quantity"><p>Quantity</div>
-					  	<div class="input-group spinner" style="margin-bottom:20px;">
-    					<input type="text" class="form-control" value="0">
-   					 	<div class="input-group-btn-vertical">
-      						<button class="btn btn-default" type="button"><i class="fa fa-caret-up"></i></button>
-      						<button class="btn btn-default" type="button"><i class="fa fa-caret-down"></i></button>
-    					</div>
-  						</div>
+						<div ng-repeat="product in products">
+							<div class="row">
+								<div class="col-md-12">
+									<p>{{product.product_name}}</p>
+									<img class="image" ng-model="image" ng-src="{{product.product_image}}">
+									<p class="font">${{product.product_price}}</p>
+									<div class="input-group spinner" style="margin-bottom:20px;">
+	    							<input type="text" class="form-control" ng-model="product.product_quantity">
+	   					 			<div class="input-group-btn-vertical">
+	      								<button class="btn btn-default" type="button" ng-click="product.product_quantity = product.product_quantity + 1"><b class="fa fa-caret-up">+</b></button>
+	      								<button class="btn btn-default" type="button" ng-click="product.product_quantity = product.product_quantity - 1"><b class="fa fa-caret-down">-</b></button>
+	    							</div>
+	  								</div>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 				
 				<div class="col-md-6 select">
-					<strong>Your Shopping Cart</strong>
-					
+					<strong style="text-decoration: underline;">Your Shopping Cart</strong>
 					<div class="col-md-12 list" style="text-align: left">
-					<div ng-model="name"><p>MacBook Air 13.3-Inch Laptop</p></div>
-						<div><img class="image" ng-model="image" src="https://images-na.ssl-images-amazon.com/images/I/41iKZfi08bL._SX300_QL70_.jpg"></div>
-						<div class="font" ng-model="price">$887.99</div>
-						<div class="quantityfont" ng-model="quantity"><p>Quantity</div>
-  					</div>
-  					
+  					<div ng-repeat="item in cart">
+						<div class="row">
+							<div class="col-md-12">
+								<p>{{item.product_name}}</p>
+								<img class="image" ng-model="image" ng-src="{{item.product_image}}">
+								<p class="font">Amount: ${{item.product_price}}</p>
+								<p class="deliveryfont">Quantity: {{item.product_quantity}}</p>
+							</div>
+						</div>
+					</div>
+					<div class="total">Cart Total: ${{total}}</div>
+					</div>
 				</div>
 				
 			</div>			
@@ -136,7 +70,7 @@
 	
 	<div class="row">
 		<div class="col-md-12">
-			<input type="submit" class="btn btn-success button" ng-click="add();" value="Add to Cart" />
+			<input type="submit" class="btn btn-success button" ng-click="addToCart();" value="Add to Cart" />
 		</div>
 	</div>
 	

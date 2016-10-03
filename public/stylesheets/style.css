@@ -25,7 +25,6 @@ a {
 .select {
 	margin-top: 30px;
 	font-size: 40px;
-	text-decoration: underline;
 }
 
 .button {
@@ -34,7 +33,7 @@ a {
 	color:white;
 	border-radius: 10px;
 	margin:auto;
-	margin-bottom: 5%;
+	margin-bottom: 30px;
 	margin-top: 3%;
 }
 
@@ -57,11 +56,12 @@ a {
 .deliveryfont {
 	font-size: 25px;
 	color: #008a47;
+	margin-bottom: 5%;
 }
 
-.quantityfont {
+.total {
 	margin-top: 2%;
-	font-size: 25px;
+	font-size: 30px;
 	color: black;
 }
 
@@ -100,7 +100,7 @@ a {
   margin-top: -2px;
   border-bottom-right-radius: 4px;
 }
-.input-group-btn-vertical i{
+.input-group-btn-vertical b{
   position: absolute;
   top: 0;
   left: 4px;
