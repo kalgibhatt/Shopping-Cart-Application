@@ -1,6 +1,5 @@
 var cart = angular.module('cart', []);
 cart.controller('ShoppingCart', function($scope, $http) {
-	
 	$scope.products = [{
 		"product_name" : "MacBook Air 13.3-Inch Laptop",
 		"product_quantity" : 0,
@@ -41,7 +40,7 @@ cart.controller('ShoppingCart', function($scope, $http) {
 	});
 
 	$scope.addToCart = function() {
-		
+		$scope.errorMessage = "";
 		var cart = [];
 		var negativeQuantity = false;
 		for(var i=0;i<$scope.products.length;i++){
